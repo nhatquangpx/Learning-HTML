@@ -1,0 +1,48 @@
+Các thẻ html cần nhớ:
+<html>: Đây là thẻ gốc trong tệp dữ liệu và chứa tất cả các loại thẻ khác trong đoạn code (ngoại trừ !DOCTYPE). 
+<base>:	Chỉ định URL cơ sở cho tất cả các URL tương đối trong một tài liệu. Và chỉ có thể có một phần tử như vậy trong một tài liệu.
+
+<head>:	Phần tử con đầu tiên của thẻ <html> và bao gồm các thẻ con khác chứa thông tin về trang web.
+<style>: Dùng để định dạng các thành phần của website như màu sắc, màu nền, màu viền,… của bất cứ thành phần nào có trong trang HTML. 
+<title>:Thường được sử dụng bên trong thẻ <head> và được dùng để xác định tiêu đề của trang web khi được hiển thị trên trình duyệt. 
+<meta>: Thường được đặt bên trong phần tử <head> và dùng để cung cấp metadata cho trình duyệt và công cụ tìm kiếm.
+<link>: Đặt trong phần tử <head> và được sử dụng để định nghĩa một liên kết trên trang web với một liên kết bên ngoài trang web.
+
+<body>: Được sử dụng như phần tử con thứ hai của thẻ <html> và dùng để chứa các nội dung mà bạn muốn hiển thị lên trang web.  
+<h1>-><h6>: Tiêu đề (Giảm dần kích cỡ chữ từ h1->h6), định dạng mặc định là chữ to, in đậm
+<hr>: Chèn đường kẻ phân cách nằm ngang, không có thẻ đóng
+<p>: Đoạn văn
+<br>: Ngắt xuống dòng
+<a href="...">: Liên kết
+<img src="...">: Chèn ảnh có nguồn lấy từ path trong src
+<ul>, <ol>: Danh sách (unordered/ordered)
+<li>: Mục trong danh sách
+<form>: Biểu mẫu
+<input>, <button>: Ô nhập liệu, nút
+
+Thẻ định dạng thành phần web:
+<header>: Xác định phần đầu của trang web như tiêu đề, thanh tìm kiếm, các trang web con,...
+<footer>: Xác định phần chân trang của web, nội dung <footer> thường chứa thông tin về trang web, dữ liệu bản quyền hoặc các tài liệu liên quan khác
+<main>: Xác định phần thân của trang web
+<div>: Làm thùng chứa cho các phần tử khác
+<dialog>: Tạo một hộp thoại, dùng cho các model hỗ trợ tương tác như thông báo, xác nhận hoặc nhập dữ liệu
+<article>: Thể hiện thành phần độc lập trong một tài liệu, ứng dụng hoặc là một trang web. Ví dụ: bài đăng, blog, bài báo, sự kiện,...
+<section>: Đại diện cho một phần độc lập chung của tài liệu và không có thành phần ngữ nghĩa cụ thể. Các phần trong thẻ <section> thường phải có tiêu đề
+
+Thẻ định dạng nội dung văn bản:
+<em>: Nhấn mạnh văn bản quan trọng
+<b>: Định dạng chữ in đậm trong đoạn văn bản
+<strong>: Cho phép người dùng bôi đậm các ký tự, đoạn văn bản mong muốn -> giống <b> nhưng <strong> được khuyến khích sử dụng nhiều hơn khi muốn đánh dấu các văn bản ở mức độ quan trọng
+<i>: In nghiêng
+<u>: Gạch chân
+<abbr>: Định nghĩa từ viết tắt hoặc tóm tắt một đoạn nội dung nào đó
+<blockquote>: Tạo đoạn trích dẫn từ một website khác
+<small>: Định dạng kích thước nhỏ cho văn bản.
+<code>: Định dạng văn bản mang ý nghĩa là câu lệnh trong lập trình.
+<pre>: Định dạng nội dung mà bạn muốn hiển thị lên màn hình được giữ nguyên hình dạng giống như ở trình soạn thảo. Bên cạnh đó, thẻ còn công dụng giữ nguyên khoảng trắng và xuống dòng trong lập trình.
+<q>: Dùng để tạo một câu trích dẫn ngắn khi được hiển thị trên trang web.
+<sub>: Được dùng để định dạng các loại văn bản nằm ở nửa dưới văn bản thông thường.
+<sup>: Định dạng văn bản có giá trị số mũ, lũy thừa,.. trong toán học hoặc là các văn bản có kích thước nhỏ, thường nằm ở nửa trên văn bản thông thường.
+<time>: Định dạng những đoạn văn bản có giá trị là ngày tháng, thời gian hoặc các ngày lễ đặc biệt trong năm.
+<wbr>: Có công dụng gần giống với <br>, được dùng khi chiều rộng của phần tử không đủ để chứa hết từ, sử dụng <wbr> để ngắt xuống dòng. 
+<bdo>: Được sử dụng để đảo ngược thứ tự xuất hiện trên trang web của các ký tự. 
