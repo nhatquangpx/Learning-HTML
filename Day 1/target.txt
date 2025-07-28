@@ -1,0 +1,5 @@
+Mục tiêu của buổi học:
+- Hiểu HTML là gì, trang Web hoạt động ra sao
+- Biết cách dùng các thẻ HTML cơ bản: <!DOCTYPE>, <html>, <head>, <body>, <h1>,
+ <p>, <a>, <img>, <ul>, <li>, <form>, <input>.
+- Tự tay viết một trang CV cá nhân đơn giản bằng HTML
