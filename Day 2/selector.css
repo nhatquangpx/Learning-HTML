@@ -8,8 +8,8 @@ p {
 
 /*---------------------------------------*/
 
-/* Selector theo class */
-/* file .html:
+/* Selector theo class 
+file .html:
 
     <p class="note">Ghi chú</p> 
 
@@ -21,8 +21,8 @@ p {
 
 /*-------------------------------------------*/
 
-/* Selector theo ID */
-/* file .html::after
+/* Selector theo ID 
+file .html:
 
     <h2 id="main-title">Tiêu đề chính</h2>
 
@@ -33,3 +33,28 @@ p {
 /* ID chỉ dùng 1 lần cho mỗi trang */
 
 /*---------------------------------*/
+
+/* Thứ tự ưu tiên của các selector 
+1. Cao nhất: !important
+Ví dụ: 
+    p {
+        color: red !important; 
+    }
+2. Inline style
+Ví dụ:
+    <p style="color: green;">Nội dung</p>
+3. ID selector
+Ví dụ:
+    #main-title {
+        color: blue;
+    }
+4. Class selector
+Ví dụ:
+    .note {
+        color: purple;
+    }
+5. Thẻ selector
+Ví dụ:
+    p {
+        color: black;
+    }
