@@ -1,0 +1,14 @@
+/* Cấu trúc lệnh CSS
+    selector {
+        property: value;
+    }   
+   - Selector: Chọn phần tử HTML để áp dụng kiểu
+   - Declaration Block: Chứa các thuộc tính và giá trị
+   - Property: Tên thuộc tính CSS
+   - Value: Giá trị của thuộc tính CSS
+*/
+/* Ví dụ về cấu trúc lệnh CSS */
+body {
+    background-color: #f0f0f0; /* Màu nền của trang */
+    font-family: Arial, sans-serif; /* Phông chữ của văn bản */
+}
