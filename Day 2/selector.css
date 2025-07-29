@@ -1,0 +1,35 @@
+/* Các selector hay dùng */
+
+/* Selector theo tên thẻ */
+p {
+    color: gray;
+}
+/* Khi đó áp dụng cho tất cả các thẻ <p> */
+
+/*---------------------------------------*/
+
+/* Selector theo class */
+/* file .html:
+
+    <p class="note">Ghi chú</p> 
+
+*/
+.note {
+    color: orange;
+}
+/* Class dùng khi bạn muốn áp dụng nhiều lần */
+
+/*-------------------------------------------*/
+
+/* Selector theo ID */
+/* file .html::after
+
+    <h2 id="main-title">Tiêu đề chính</h2>
+
+*/
+#main-title {
+    color: navy;
+}
+/* ID chỉ dùng 1 lần cho mỗi trang */
+
+/*---------------------------------*/
