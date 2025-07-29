@@ -58,3 +58,16 @@ Ví dụ:
     p {
         color: black;
     }
+
+/*---------------------------------*/
+/* Mẹo thực hành:
+- Nhiều style bị xung đột: Kiểm tra độ ưu tiên của selector
+- Dự án lớn: Dùng class nhiều hơn ID (ID chỉ nên dùng 1 lần)
+- Khi debug: Dùng DevTools để xem cái nào đang bị override
+- Tránh: Dùng !important bữa bãi -> Khó bảo trì
+*/
+
+/*----------------------------------*/
+/* DevTools kiểm tra cụ thể:
+- Mở trình duyệt -> Chuột phải vào phần tử -> Chọn Inspect
+- Tab "Styles" sẽ hiển thị các CSS áp dụng và cái nào bị gạch (không dùng vì thua ưu tiên)
