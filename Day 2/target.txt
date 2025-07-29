@@ -1,0 +1,4 @@
+Mục tiêu của buổi học:
+- Hiểu cách viết CSS để thay đổi màu sắc, kích thước, căn lề, viền, nền,...
+- Hiểu cách liên kết CSS với HTML (3 cách)
+- Thực hành: Làm đẹp lại trang CV cá nhân Day 1

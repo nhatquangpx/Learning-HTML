@@ -1,0 +1,60 @@
+# CSS là gì?
+- CSS giúp tách nội dung (HTML) khỏi hình thức (giao diện). Nếu viết một lần, có thể áp dụng cho nhiều thẻ HTML, dễ tái sử dụng và quản lý
+- Ví dụ:
+file .html:
+
+<p class="highlight">Đây là đoạn văn quan trọng</p>
+
+file .css:
+
+.highlight {
+    color: red;
+    font-weight: bold;
+}
+
+# Cách tổ chức CSS - 3 cách chính:
+1. Inline CSS - viết trực tiếp vào thẻ:
+- Ví dụ:
+
+    <p style="color: red; font-size: 20px;">Xin chào</p>
+
+- Ưu điểm: Nhanh, dễ test
+- Nhược điểm: Không nên dùng trong dự án thật vì khó quản lí
+
+2. Internal CSS - viết trong thẻ <style> trong file HTML:
+- Ví dụ: file .html:
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <style>
+        p {
+            color: blue;
+            font-size: 18px;
+        }
+        </style>
+    </head>
+    <body>
+        <p>Đoạn văn này màu xanh có cỡ chữ 18px</p>
+    </body>
+    </html>
+
+- Ưu điểm: Tốt cho trang nhỏ
+- Nhược điểm: Trang lớn sẽ bị rối nếu quá nhiều style
+
+3. External CSS - viết riêng file .css:
+- Ví dụ:
+file index.html:
+
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+file style.css:
+
+    p {
+        color: green;
+        font-size: 18px;
+    }
+
+=> Rất khuyến khích sử dụng cách này vì rõ ràng, dễ tái sử dụng

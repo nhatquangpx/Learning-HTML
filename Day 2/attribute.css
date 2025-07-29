@@ -1,0 +1,35 @@
+/* Các thuộc tính quan trọng */
+
+/* Màu sắc (color, background-color) */
+body {
+    background-color: #f0f0f0;
+}
+h1 {
+    color: #2c3e50;
+}
+
+/* Font chữ & kích thước (font-family, font-size) */
+p {
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Khoảng cách (margin, padding) */
+.box {
+    padding: 20px; /* Khoảng cách bên trong */
+    margin: 10px; /* Khoảng cách bên ngoài */
+}
+
+/* Viền, bo góc (border, border-radius) */
+img {
+    border: 2px solid black; /* Viền ảnh */
+    border-radius: 10px; /* Bo góc ảnh */
+}
+
+/* Kích thước (width, height) */
+.container {
+    width: 400px;
+    height: 300px;
+}
