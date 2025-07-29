@@ -1,0 +1,14 @@
+CSS là gì?
+- CSS giúp tách nội dung (HTML) khỏi hình thức (giao diện). Nếu viết một lần, có thể áp dụng cho nhiều thẻ HTML, dễ tái sử dụng và quản lý
+- Ví dụ:
+file .html:
+
+<p class="highlight">Đây là đoạn văn quan trọng</p>
+
+file .css:
+
+.highlight {
+    color: red;
+    font-weight: bold;
+}
+
