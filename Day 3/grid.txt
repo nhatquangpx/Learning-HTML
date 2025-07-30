@@ -1,0 +1,113 @@
+# Grid là gì?
+- Chia layout dạng hàng và cột
+- Chia layout giống trang (như Excel)
+- Dễ kiểm soát kích thước và khoảng cách
+- Phù hợp với thiết kế khối, dashboard, gallery,..
+
+# Cách tạo grid cơ bản:
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;     // 3 cột bằng nhau
+    gap: 20px;
+}
+
+| Cú pháp          | Ý nghĩa                  |
+| ---------------- | ------------------------ |
+| `1fr`            | 1 phần chia đều          |
+| `repeat(n, ...)` | Lặp lại cấu trúc `n` lần |
+
+grid-template-rows hoạt động tương tự cho chiều dọc
+
+# Cú pháp của Grid:
+- Gồm 2 thành phần chính:
+    + Container: phần tử cha (thiết lập display: grid)
+    + Item: các phần tử con bên trong grid
+
+# Các thuộc tính của container:
+- display: grid -> khai báo grid layout
+    .container {
+        display: grid;
+    }
+
+- grid-template-columns/grid-template-rows -> Dùng để chia cột và hàng
+| Giá trị         | Ý nghĩa                                |
+| --------------- | -------------------------------------- |
+| `px`, `%`, `fr` | px: cố định, %: tỷ lệ, `fr`: phần chia |
+| `repeat(n, x)`  | Lặp `x` n lần                          |
+
+grid-template-columns: 200px 1fr 1fr;     /* cột 1 cố định, cột 2–3 chia đều */
+grid-template-columns: repeat(3, 1fr);    /* 3 cột bằng nhau */
+grid-template-rows: 100px auto 50px;      /* hàng đầu 100px, giữa auto, cuối 50px */
+
+- gap, column-gap, row-gap: Khoảng cách giữa các cột và hàng
+gap: 20px; /* cả hàng và cột */
+column-gap: 30px;
+row-gap: 10px;
+
+- justify-items: Căn chỉnh item theo ô chiều ngang 
+| Giá trị   | Ý nghĩa             |
+| --------- | ------------------- |
+| `start`   | bên trái            |
+| `center`  | giữa                |
+| `end`     | bên phải            |
+| `stretch` | kéo căng (mặc định) |
+
+    .container {
+        justify-items: center;
+    }
+
+- align-items: căn theo chiều dọc trong 
+| Giá trị   | Ý nghĩa             |
+| --------- | ------------------- |
+| `start`   | trên                |
+| `center`  | giữa                |
+| `end`     | dưới                |
+| `stretch` | kéo căng (mặc định) |
+
+    .container {
+        align-items: center;
+    }
+
+- justify-content & align-content: Dùng khi container lớn hơn nội dung bên trong. Giống Flexbox, nhưng áp dụng cho toàn bộ lưới
+    .container {
+        justify-content: space-between;
+        align-content: center;
+    }
+
+- auto-fit, auto-fill, minmax(): Dùng để responsive - tự động thêm/giảm cột
+    .container {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+| Hàm                | Ý nghĩa                                 |
+| ------------------ | --------------------------------------- |
+| `auto-fit`         | co dãn theo chiều ngang để lấp đầy hàng |
+| `minmax(min, max)` | Cột sẽ có kích thước trong khoảng       |
+
+# Thuộc tính của item 
+- grid-column/grid-row -> Dùng để kéo dài item qua nhiều cột hoặc hàng
+    .item1 {
+        grid-column: 1 / 3;  /* từ cột 1 đến trước cột 3 → chiếm 2 cột */
+        grid-row: 1 / 2;
+    }
+
+- grid-area -> Tên khu vực
+    .item {
+        grid-area: header;
+    }
+
+Kết hợp với grid-template-areas để tạo layout dễ đọc
+    .container {
+        display: grid;
+        grid-template-areas:
+            "header header"
+            "sidebar content"
+            "footer footer";
+    }
+
+- justify-self & align-self: Căn chỉnh item riêng lẻ trong ô
+    .item {
+        justify-self: center;
+        align-self: start;
+    }
