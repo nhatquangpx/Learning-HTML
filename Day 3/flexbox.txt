@@ -1,0 +1,69 @@
+# Flexbox là gì?
+- Flexible Box Model
+- Căn giữa, chia cột, canh hàng dễ dàng
+- Hoạt động theo 1 chiều (row hoặc column)
+- Rất tốt cho responsive và component nhỏ (menu, danh sách, grid đơn giản)
+
+# Kích hoạt chế độ flex: 
+- File .css:
+
+    .container {
+        display: flex;
+    }
+
+=> Khi đó cả phần tử con sẽ trở thành flex items và tự sắp xếp theo logic Flexbox
+
+# Thuộc tính của phần tử cha (container):
+- display: flex -> Kích hoạt Flex (bắt buộc)
+
+- flex-direction: row(column) -> Chiều sắp xếp, mặc định là row
+| Giá trị          | Ý nghĩa                | Mô tả          |
+| ---------------- | ---------------------- | -------------- |
+| `row`            | Xếp từ trái sang phải  | (mặc định)     |
+| `row-reverse`    | Xếp từ phải sang trái  | item đảo ngược |
+| `column`         | Xếp từ trên xuống dưới | dọc            |
+| `column-reverse` | Xếp từ dưới lên trên   | đảo ngược dọc  |
+
+- justify-content: flex-start (center/space-between, space-around, space-evenly) -> Căn ngang
+| Giá trị         | Ý nghĩa                                         | Dùng khi     |
+| --------------- | ----------------------------------------------- | ------------ |
+| `flex-start`    | Dồn về đầu trục                                 | mặc định     |
+| `center`        | Căn giữa                                        | rất phổ biến |
+| `flex-end`      | Dồn về cuối trục                                |              |
+| `space-between` | Khoảng cách đều, **2 đầu sát mép**              |              |
+| `space-around`  | Khoảng cách đều nhau, **hai đầu có nửa khoảng** |              |
+| `space-evenly`  | Khoảng cách **hoàn toàn đều** kể cả hai đầu     |              |
+
+
+- align-items: stretch (center, flex-start, flex-end, baseline) -> Căn dọc
+| Giá trị      | Ý nghĩa                         | Ghi chú                             |
+| ------------ | ------------------------------- | ----------------------------------- |
+| `stretch`    | Kéo cao để bằng nhau (mặc định) | Chỉ hoạt động nếu chưa có chiều cao |
+| `center`     | Căn giữa theo trục phụ          | Dùng nhiều                          |
+| `flex-start` | Căn đầu trục phụ                | Căn đầu cột                         |
+| `flex-end`   | Căn cuối trục phụ               |                                     |
+| `baseline`   | Căn theo dòng chữ đầu tiên      | Dùng khi có văn bản                 |
+Khi flex-direction: row → trục phụ là dọc
+
+- flex-wrap: nowrap (wrap/wrap-reverse) -> Cho phép các item xuống dòng khi chật
+| Giá trị        | Ý nghĩa                     |
+| -------------- | --------------------------- |
+| `nowrap`       | Không xuống dòng (mặc định) |
+| `wrap`         | Xuống dòng nếu không đủ chỗ |
+| `wrap-reverse` | Xuống dòng từ dưới lên trên |
+
+
+- gap: abcpx -> Như margin auto giữa item (Khoảng cách giữa các item, không cần dùng margin-right, margin-left nữa)
+
+# Hệ trục mặc định: 
+- Trục chính (main axis): chiều ngang (row)
+- Trục phụ (cross axis): chiều dọc (column)
+
+# Thuộc tính của phần tử con trong flex:
+| Thuộc tính    | Ý nghĩa                      | Ví dụ                    |
+| ------------- | ---------------------------- | ------------------------ |
+| `flex-grow`   | Mở rộng nếu còn khoảng trống | `flex-grow: 1`           |
+| `flex-shrink` | Co lại nếu không đủ chỗ      | `flex-shrink: 1`         |
+| `flex-basis`  | Kích thước khởi đầu          | `flex-basis: 300px`      |
+| `flex`        | Viết gộp 3 cái trên          | `flex: 1 1 200px`        |
+| `align-self`  | Căn riêng từng item          | `align-self: flex-start` |
