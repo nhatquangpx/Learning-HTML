@@ -1,0 +1,5 @@
+Mục tiêu buổi học:
+- Hiểu nguyên lý sắp xếp layout theo chiều ngang/dọc
+- Biết cách sử dụng Flexbox để căn chỉnh, chia cột, căn giữa
+- Làm quen với CSS Grid - hệ thống lưới mạnh mẽ để chia bố cục
+- Thực hành làm giao diện card sản phẩm hoặc blog
