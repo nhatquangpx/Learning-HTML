@@ -1,0 +1,7 @@
+# So sánh Flexbox và Grid:
+| Tiêu chí             | Flexbox                              | Grid                                          |
+| -------------------- | ------------------------------------ | --------------------------------------------- |
+| Chiều hoạt động      | 1 chiều (row/column)                 | 2 chiều (row + column)                        |
+| Dễ dùng cho          | Navbar, danh sách                    | Layout, gallery, dashboard                    |
+| Canh giữa            | Rất mạnh (`center`, `space-between`) | Có nhưng không chuyên                         |
+| Giao diện responsive | Tốt                                  | Rất tốt (chia hàng/cột theo `fr`, `auto-fit`) |
