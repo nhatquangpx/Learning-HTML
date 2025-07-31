@@ -23,6 +23,14 @@ nav a {
     text-align: center;
 }
 
+img {
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    height: auto;
+    border-radius: 8px;
+}
+
 .skills {
     display: flex;
     justify-content: center;
