@@ -1,0 +1,5 @@
+Mục tiêu của buổi học:
+- Sử dụng HTML để tổ chức nội dung rõ ràng, semnatic
+- Dùng CSS để định dạng giao diện, căn chỉnh bố cục bằng Flexbox/Grid
+- Thiết kế responsive - trang web hiển thị tốt trên cả PC và điện thoại
+- Không cần Javascript, tập trung vào giao diện frontend
