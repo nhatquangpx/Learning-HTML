@@ -1,0 +1,5 @@
+Mục tiêu của buổi học:
+- Hiểu responsive design là gì và tại sao cần nó
+- Làm quen với các đơn vị linh hoạt (%, vw, em, rem) thay cho px
+- Sử dụng Media Queries để thay đổi bố cục theo kích thước màn hình
+- Thực hành làm 1 giao diện đơn giản có thể hiển thị đẹp trên mọi thiết bị
