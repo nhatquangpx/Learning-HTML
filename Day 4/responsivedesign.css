@@ -1,0 +1,10 @@
+.container {
+    width: 80%;
+    padding: 2em;
+    font-size: 1.2em;
+}
+
+/* Giải thích:
+- Đơn vị % được sử dụng để đảm bảo rằng kích thước của phần tử sẽ thay đổi theo kích thước của viewport, giúp thiết kế trở nên linh hoạt hơn.
+- Đơn vị em được sử dụng để đảm bảo rằng kích thước chữ sẽ thay đổi theo kích thước của font chữ gốc, giúp cải thiện khả năng đọc trên các thiết bị khác nhau.
+*/

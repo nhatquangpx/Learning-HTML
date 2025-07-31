@@ -1,0 +1,27 @@
+# Responsive Design là gì?
+- Giao diện tự thay đổi bố cục/kích thước theo kích thước thiết bị
+| Thiết bị | Độ rộng màn hình thường gặp |
+| -------- | --------------------------- |
+| Desktop  | ≥ 1024px                    |
+| Tablet   | \~ 768px                    |
+| Mobile   | ≤ 600px                     |
+- Ví dụ: Trên desktop có 3 cột, nhưng trên điện thoại muốn hiển thị 1 cột - đó là responsive
+
+# Đơn vị tương đối với tuyệt đối:
+| Đơn vị      | Nghĩa                            | Dùng khi nào            |
+| ----------- | -------------------------------- | ----------------------- |
+| `px`        | pixel (cố định)                  | Ít dùng khi responsive  |
+| `%`         | phần trăm của phần tử cha        | Co giãn dễ              |
+| `vw` / `vh` | % chiều rộng / cao của màn hình  | `100vw = full width`    |
+| `em`, `rem` | tương đối với font cha hoặc root | Dùng cho chữ và spacing |
+
+    .container {
+        width: 80%;             // co giãn theo cha
+        padding: 2em;           // theo font chữ
+        font-size: 1.2rem;
+    }
+
+
+
+
+

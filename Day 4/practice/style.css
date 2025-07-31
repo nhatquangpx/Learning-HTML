@@ -1,0 +1,16 @@
+.product-list {
+    display: flex;
+    gap: 20px;
+}
+.product {
+    flex: 1;
+    padding: 20px;
+    background: #eee;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .product-list {
+        flex-direction: column;
+    }
+}

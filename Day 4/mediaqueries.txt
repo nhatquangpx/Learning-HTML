@@ -1,0 +1,18 @@
+# Media Queries - điều kiện thay đổi giao diện
+- Cú pháp cơ bản:
+
+    @media (max-width: 768px) {
+        /* CSS chỉ áp dụng khi màn hình nhỏ hơn hoặc bằng 768px */
+        .menu {
+            display: none;
+        }
+
+        .container {
+            flex-direction: column;
+        }
+    }
+
+| Loại Media Query   | Ý nghĩa                           |
+| ------------------ | --------------------------------- |
+| `(max-width: Xpx)` | áp dụng khi nhỏ hơn hoặc bằng Xpx |
+| `(min-width: Xpx)` | áp dụng khi lớn hơn hoặc bằng Xpx |
